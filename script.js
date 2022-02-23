@@ -1,5 +1,7 @@
 // Assignment code here
-
+var randomNumber = function(min, max) {
+    var value = Math.floor(Math.random() * (max -min) + min);
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
