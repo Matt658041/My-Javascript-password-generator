@@ -19,9 +19,9 @@ var newPassword = [ {
 
 var generatePassword = function()  {
 // Present prompts for password criteria
-  var promptPassword = window.prompt(`Your password should be a lenght of between 8 and 128 characters.`);
-  window.prompt (`You can choose from many character types`);  
-  window.prompt(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
+  var promptPassword = window.alert(`Your password should be a lenght of between 8 and 128 characters.`);
+  window.alert (`You can choose from many character types`);  
+  window.alert(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
 
   
 };
