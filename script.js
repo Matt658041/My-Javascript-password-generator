@@ -28,23 +28,26 @@ const getKey = [
 
 let generatePassword = function()  {
 // Present prompts for password criteria
-  var promptPassword = window.alert(`Your password should be a lenght of between 8 and 128 characters.`);
+  var promptPassword = window.alert(`Your password should be a length of between 8 and 128 characters.`);
   window.alert (`You can choose from many character types`);  
   window.alert(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
-  window.prompt(`Please select the length of your password in numeric values.`)
-  if (promptPassword){
+      window.prompt(`Please select the length of your password in numeric values.`);
 
-  } else  {
+  
 
-  }
+   
   // Ask for character types
-  window.prompt(`Please choose character types to include in password.`)
+  window.prompt(`Please choose character types to include in password.`);
   if(promptPassword){
 
   } else {
 
-  }
+  } 
+  // convert promptPassword to all lower case
+  promptPassword = promptPassword.toLowercase(); 
+
   //Generate password
+  window.prompt(`Generate password`);
   for (let i = 0; i < getKey.length; i++){
 
   }
