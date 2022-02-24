@@ -1,17 +1,43 @@
 // Assignment code here
-let generatePassword = function()  {
-    window.alert(`Please select from the following criteria to create a password`);
+ 
+//Generate a random Number
+var randomNumber = function(min, max) {
+  var value = Math.floor(Math.random() * (max - min) + min);
+
+  return value;
+};
+//Object Array
+var newPassword = [ {
+  name: `809921GL!`,
+  randomPassword: randomNumber(8,128)
+}, 
+{
+  name: `76887987989A`,
+  randomPassword: randomNumber(8,128)
+}
+];
+
+var generatePassword = function()  {
+// Present prompts for password criteria
+  var promptPassword = window.prompt(`Your password should be a lenght of between 8 and 128 characters.`);
+  window.prompt (`You can choose from many character types`);  
+  window.prompt(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
+
+  
 };
 
 
 
+
+
+
 // Get references to the #generate element
-let generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
