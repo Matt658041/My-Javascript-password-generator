@@ -1,14 +1,14 @@
 // Assignment code here
  
 //Objects
-const keys =  {
+var keys =  {
   upperCase: `ZXCVBNMLKJHGFDSAQWERTYUIOP`,
   lowerCase: `zxcvbnmasdfghjklqwertyuiop`,
   number: `0123456789`,
   symbol: `!@#$%^&*()_+<>?:"{}[]`
 }
 //Generate a random Number
-const getKey = [
+var getKey = [
   function uppercase() {
     return keys.upperCase[Math.floor(Math.random()* keys.upperCase.length)];
   },
@@ -26,19 +26,25 @@ const getKey = [
 
 
 
-let generatePassword = function()  {
+var generatePassword = function()  {
 // Present prompts for password criteria
   var promptPassword = window.alert(`Your password should be a length of between 8 and 128 characters.`);
-  window.alert (`You can choose from many character types`);  
-  window.alert(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
-      window.prompt(`Please select the length of your password in numeric values.`);
+  var promptPassword = window.alert (`You can choose from many character types`);  
+  var promptPassword = window.alert(`Your password can include uppercase, lowercase, numeric values, or special characters.`);
+  //Select lenght of password
+  
+   var passwordLength =  window.prompt(`Please select the length of your password in numeric values.`);
+   if (passwordLength){
 
+   }else {
+
+   }
   
 
    
   // Ask for character types
-  window.prompt(`Please choose character types to include in password.`);
-  if(promptPassword){
+ var characterTypes = window.prompt(`Please choose numbers,letters, or symbols to include in password.`);
+  if(characterTypes){
 
   } else {
 
@@ -48,14 +54,12 @@ let generatePassword = function()  {
 
   //Generate password
   window.prompt(`Generate password`);
-  for (let i = 0; i < getKey.length; i++){
+  
+  for (var i = 0; i < getKey.length; i++){
 
   }
   
 };
-
-
-
 
 
 
