@@ -1,23 +1,32 @@
 // Assignment code here
  
-//Generate a random Number
-var randomNumber = function(min, max) {
-  var value = Math.floor(Math.random() * (max - min) + min);
-
-  return value;
-};
-//Object Array
-var newPassword = [ {
-  name: `809921GL!`,
-  randomPassword: randomNumber(8,128)
-}, 
-{
-  name: `76887987989A`,
-  randomPassword: randomNumber(8,128)
+//Objects
+const keys =  {
+  upperCase: `ZXCVBNMLKJHGFDSAQWERTYUIOP`,
+  lowerCase: `zxcvbnmasdfghjklqwertyuiop`,
+  number: `0123456789`,
+  symbol: `!@#$%^&*()_+<>?:"{}[]`
 }
+//Generate a random Number
+const getKey = [
+  function uppercase() {
+    return keys.upperCase[Math.floor(Math.random()* keys.upperCase.length)];
+  },
+  function lowerCase() {
+    return keys.upperCase[Math.floor(Math.random()* keys.lowerCase.length)];
+  },
+  function number() {
+    return keys.upperCase[Math.floor(Math.random()* keys.number.length)];
+  },
+  function symbol() {
+    return keys.upperCase[Math.floor(Math.random()* keys.symbol.length)];
+  },
+
 ];
 
-var generatePassword = function()  {
+
+
+let generatePassword = function()  {
 // Present prompts for password criteria
   var promptPassword = window.alert(`Your password should be a lenght of between 8 and 128 characters.`);
   window.alert (`You can choose from many character types`);  
