@@ -1,4 +1,9 @@
 // Assignment code here
+window.prompt(`Welcome to password Generator.`);
+window.prompt(`When pressing the generate password button you will be asked to choose a character length.`)
+window.prompt(`If you would like numbers, uppercase, lowercase, and special characters in your password`)
+
+
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -16,7 +21,7 @@ uppercaseArray [1]
 //-----------------------------------------------------------------
   var numCharacter = prompt ("How many characters would you like, with the characters being between 8 and 128?");
   var numbers = confirm ("Would you like numbers in your password?");
-  var uppercases = confirm ("Would youu like Uppercases in your password?");
+  var uppercases = confirm ("Would you like Uppercases in your password?");
   var lowercases = confirm ("Would you like lowercases in your password?");
   var characters = confirm ("Would you like special characters in your password?");
 
@@ -59,12 +64,11 @@ function writePassword() {
 
   passwordText.value = password;
 
-  // copyBtn.removeAttribute("disabled");
-  // copyBtn.focus();
+  
 }
 
 function copyToClipboard() {
-  // BONUS 
+  
 }
 
 // Add event listener to generate button
