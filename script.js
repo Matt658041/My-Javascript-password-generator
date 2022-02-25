@@ -1,7 +1,8 @@
 // Assignment code here
 window.alert(`Welcome to password Generator.`);
-window.alert(`When pressing the generate password button you will be asked to choose a character length.`)
-window.alert(`Also if you would like numbers, uppercase, lowercase, and special characters in your password`)
+window.alert(`When pressing the generate password button you will be asked to choose a character length.`);
+window.alert(`Also, if you would like numbers, uppercase, lowercase, and special characters in your password`);
+window.alert(`Please answer the questions with either yes or no answers.`)
 
 
 var generateBtn = document.querySelector("#generate");
@@ -18,7 +19,7 @@ var resultArray = [];
 var userArray = [];
 
 uppercaseArray [1]
-//-----------------------------------------------------------------
+//-Windows Prompts
   var numCharacter = prompt ("How many characters would you like, with the characters being between 8 and 128?");
   var numbers = prompt ("Would you like numbers in your password?");
   var uppercases = prompt ("Would you like to use Uppercase in your password?");
