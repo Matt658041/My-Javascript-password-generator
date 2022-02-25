@@ -2,7 +2,7 @@
 window.alert(`Welcome to password Generator.`);
 window.alert(`When pressing the generate password button you will be asked to choose a character length.`);
 window.alert(`Also, if you would like numbers, uppercase, lowercase, and special characters in your password`);
-window.alert(`Please answer the questions with either yes or no answers.`)
+window.alert(`After choosing how many characters, please answer the questions with either yes or no answers.`)
 
 
 var generateBtn = document.querySelector("#generate");
