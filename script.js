@@ -28,17 +28,17 @@ if (numbers){
   
 }
 
-if (uppercases){
+else if (uppercases){
   resultArray = resultArray.concat(uppercaseArray);
 
 }
 
-if (lowercases){
+ else if (lowercases){
   resultArray = resultArray.concat(lowercaseArray);
 
 }
 
-if (characters){
+else if (characters){
   resultArray = resultArray.concat(characterArray);
 }
 console.log(resultArray)
