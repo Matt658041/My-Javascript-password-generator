@@ -1,7 +1,7 @@
 // Assignment code here
-window.prompt(`Welcome to password Generator.`);
-window.prompt(`When pressing the generate password button you will be asked to choose a character length.`)
-window.prompt(`If you would like numbers, uppercase, lowercase, and special characters in your password`)
+window.alert(`Welcome to password Generator.`);
+window.alert(`When pressing the generate password button you will be asked to choose a character length.`)
+window.alert(`Also if you would like numbers, uppercase, lowercase, and special characters in your password`)
 
 
 var generateBtn = document.querySelector("#generate");
@@ -20,10 +20,10 @@ var userArray = [];
 uppercaseArray [1]
 //-----------------------------------------------------------------
   var numCharacter = prompt ("How many characters would you like, with the characters being between 8 and 128?");
-  var numbers = confirm ("Would you like numbers in your password?");
-  var uppercases = confirm ("Would you like Uppercases in your password?");
-  var lowercases = confirm ("Would you like lowercases in your password?");
-  var characters = confirm ("Would you like special characters in your password?");
+  var numbers = prompt ("Would you like numbers in your password?");
+  var uppercases = prompt ("Would you like to use Uppercase in your password?");
+  var lowercases = prompt ("Would you like to use lowercase in your password?");
+  var characters = prompt ("Would you like special characters in your password?");
 
 
 // condition of the array
